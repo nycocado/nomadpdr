@@ -1,0 +1,40 @@
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: nomad-web
+        restart: on-failure
+        environment:
+            PORT: ${PORT:-8080}
+            NODE_ENV: ${NODE_ENV:-"development"}
+            WATCHPACK_POLLING: ${WATCHPACK_POLLING:-"true"}
+            CHOKIDAR_USEPOLLING: ${CHOKIDAR_USEPOLLING:-"true"}
+        ports:
+            - "8080:8080"
+        volumes:
+            - type: bind
+              source: .
+              target: /app
+            - type: volume
+              target: /app/node_modules
+            - type: volume
+              source: web_next
+              target: /app/.next
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+            interval: 10s
+            timeout: 3s
+            retries: 3
+            start_period: 10s
+        networks:
+            - nomad-network
+
+volumes:
+    web_next:
+        driver: local
+
+networks:
+    nomad-network:
+        name: nomad-network
+        driver: bridge

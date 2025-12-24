@@ -1,0 +1,36 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "docker:up": "docker compose -f docker-compose.yml up --build",
+    "docker:up:bg": "docker compose -f docker-compose.yml up -d --build",
+    "docker:down": "docker compose -f docker-compose.yml down -v",
+    "docker:restart": "docker compose -f docker-compose.yml restart",
+    "docker:rebuild": "docker compose -f docker-compose.yml down -v && docker compose -f docker-compose.yml up --build",
+    "docker:rebuild:bg": "docker compose -f docker-compose.yml down -v && docker compose -f docker-compose.yml up -d --build",
+    "docker:logs": "docker compose -f docker-compose.yml logs -f",
+    "docker:exec:web": "docker compose -f docker-compose.yml exec web sh",
+    "docker:clean": "docker compose -f docker-compose.yml down -v && docker system prune -f",
+    "docker:health": "docker compose -f docker-compose.yml ps"
+  },
+  "dependencies": {
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
