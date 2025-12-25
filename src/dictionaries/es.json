@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "quote_button": "Pedir Presupuesto"
+  },
+  "hero": {
+    "badge": "Experiencia Internacional",
+    "title_start": "Especialistas en",
+    "title_highlight": "Varilleros (PDR)",
+    "title_end": "sin Pintura",
+    "description": "Referencia en PDR (Paintless Dent Repair) y recuperación de daños por granizo. Intervención rápida y precisa para mantener la originalidad de su vehículo en todo Portugal.",
+    "quote_button": "Presupuesto Gratis",
+    "portfolio_button": "Ver Portafolio"
+  },
+  "services": {
+    "section_title": "Nuestros Servicios",
+    "section_desc": "Técnicas avanzadas para reparar abolladuras, pliegues y daños climáticos sin comprometer la pintura original.",
+    "card_hail_title": "Reparación de Granizo",
+    "card_hail_desc": "Equipo especializado para reparar cientos de vehículos dañados por tormentas de granizo, devolviendo la condición original de fábrica.",
+    "card_pdr_title": "Varilleros (PDR)",
+    "card_pdr_desc": "Eliminamos abolladuras de puertas, guardabarros y capós causadas por pequeños impactos, preservando la pintura original y el valor del vehículo.",
+    "card_express_title": "Servicio Express",
+    "card_express_desc": "Para daños menores, ofrecemos reparaciones rápidas. Ideal para preparar vehículos para venta o devolver leasings impecables.",
+    "learn_more": "Saber más"
+  },
+  "about": {
+    "title": "Nomad PDR System",
+    "subtitle": "Excelencia en Reparación Automotriz",
+    "description": "Somos especialistas en técnicas avanzadas de Varilleros sin Pintura (PDR). Con vasta experiencia internacional, Nomad PDR System se destaca por la intervención rápida y eficiente, especialmente en casos de daños causados por granizo.",
+    "check_1": "Experiencia Internacional",
+    "check_2": "Equipo Especializado",
+    "check_3": "Atención en todo Portugal",
+    "check_4": "Tecnología de Punta",
+    "button": "Contáctenos"
+  },
+  "cta": {
+    "title": "Su Coche Nuevo de Nuevo",
+    "description": "No deje que las abolladuras desvaloricen su vehículo. Contáctenos y descubra cómo podemos ayudar.",
+    "button": "Presupuesto Gratis"
+  },
+  "footer": {
+    "desc": "Especialistas en Varilleros y reparación de granizo. Calidad, rapidez y confianza.",
+    "links_title": "Enlaces Útiles",
+    "contact_title": "Contacto",
+    "hours_title": "Horario",
+    "hours_week": "Lun - Vie: 09h - 18h",
+    "hours_sat": "Sábado: Con cita previa",
+    "hours_sun": "Domingo: Cerrado",
+    "copyright": "© 2025 Nomad PDR System. Todos los derechos reservados.",
+    "privacy": "Política de Privacidad"
+  }
+}

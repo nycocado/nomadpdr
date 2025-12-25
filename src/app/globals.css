@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-heading: var(--font-exo2), sans-serif;
+  --font-body: var(--font-roboto), sans-serif;
+
+  /* Color Palette - Defined for Tailwind v4 usage if needed directly */
+  --color-nomad-red-light: #E02B2B;
+  --color-nomad-red-dark: #990000;
+  --color-racing-blue: #2A3375;
+  --color-gold-metallic: #C5A059;
+  --color-carbon-black: #111111;
+  --color-clean-white: #FFFFFF;
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+@layer base {
+  :root {
+    /* Nomad PDR Design System (Light Mode) */
+    --background: #FFFFFF;         /* Clean White */
+    --foreground: #111111;         /* Carbon Black */
+
+    --card: #FFFFFF;
+    --card-foreground: #111111;
+
+    --popover: #FFFFFF;
+    --popover-foreground: #111111;
+
+    /* Primary: Deep Racing Blue */
+    --primary: #2A3375;
+    --primary-foreground: #FFFFFF;
+
+    /* Secondary: Gold Metallic */
+    --secondary: #C5A059;
+    --secondary-foreground: #111111;
+
+    --muted: #F4F4F6;              /* Light Asphalt */
+    --muted-foreground: #64748B;
+
+    --accent: #F4F4F6;
+    --accent-foreground: #111111;
+
+    --destructive: #E02B2B;        /* Nomad Red Light */
+    --destructive-foreground: #FFFFFF;
+
+    --border: #E2E8F0;
+    --input: #E2E8F0;
+    --ring: #2A3375;
+
+    --radius: 0.5rem;              /* 8px */
+
+    /* Custom Gradients Variables */
+    --gradient-nomad-red: linear-gradient(180deg, #E02B2B 0%, #990000 100%);
+    
+    /* Chart Colors (Mapped for Shadcn components if needed) */
+    --chart-1: #2A3375;
+    --chart-2: #C5A059;
+    --chart-3: #E02B2B;
+    --chart-4: #64748B;
+    --chart-5: #111111;
+
+    /* Sidebar Variables */
+    --sidebar: #FFFFFF;
+    --sidebar-foreground: #111111;
+    --sidebar-primary: #2A3375;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #F4F4F6;
+    --sidebar-accent-foreground: #111111;
+    --sidebar-border: #E2E8F0;
+    --sidebar-ring: #2A3375;
+  }
+
+  .dark {
+    /* Nomad PDR Design System (Dark Mode) */
+    --background: #0a0e17;         /* Very Dark Blue/Black */
+    --foreground: #F4F4F6;         /* Light Gray */
+
+    --card: #111827;               /* Dark Blue-Gray */
+    --card-foreground: #F4F4F6;
+
+    --popover: #111827;
+    --popover-foreground: #F4F4F6;
+
+    /* Primary: Lighter Blue for visibility on Dark, or keep Brand Blue */
+    /* Using a slightly brighter blue to stand out against dark bg, or stick to brand.
+       Let's stick close to brand but legible. */
+    --primary: #3d4db5; 
+    --primary-foreground: #FFFFFF;
+
+    /* Secondary: Gold Metallic */
+    --secondary: #C5A059;
+    --secondary-foreground: #111111;
+
+    --muted: #1e293b;
+    --muted-foreground: #94a3b8;
+
+    --accent: #1e293b;
+    --accent-foreground: #F4F4F6;
+
+    --destructive: #ef4444;        /* Slightly brighter Red for dark mode */
+    --destructive-foreground: #FFFFFF;
+
+    --border: #1e293b;
+    --input: #1e293b;
+    --ring: #C5A059;               /* Gold ring in dark mode */
+
+    --gradient-nomad-red: linear-gradient(180deg, #E02B2B 0%, #990000 100%);
+
+    --chart-1: #3d4db5;
+    --chart-2: #C5A059;
+    --chart-3: #ef4444;
+    --chart-4: #94a3b8;
+    --chart-5: #F4F4F6;
+
+    /* Sidebar Variables */
+    --sidebar: #0a0e17;
+    --sidebar-foreground: #F4F4F6;
+    --sidebar-primary: #3d4db5;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #1e293b;
+    --sidebar-accent-foreground: #F4F4F6;
+    --sidebar-border: #1e293b;
+    --sidebar-ring: #C5A059;
+  }
+}
+
+/* Register colors with Tailwind CSS v4 */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --image-gradient-nomad-red: var(--gradient-nomad-red);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+  img, svg {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+  }
+}
+
+/* Utility Class for the Primary Button Style */
+@layer components {
+  .btn-nomad {
+    @apply bg-[image:var(--gradient-nomad-red)] text-white font-heading font-bold uppercase rounded-md shadow-md hover:brightness-110 transition-all;
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "quote_button": "Get a Quote"
+  },
+  "hero": {
+    "badge": "International Experience",
+    "title_start": "Specialists in",
+    "title_highlight": "Paintless Dent Repair",
+    "title_end": "(PDR)",
+    "description": "Reference in PDR (Paintless Dent Repair) and hail damage recovery. Fast and precise intervention to maintain your vehicle's originality throughout Portugal.",
+    "quote_button": "Get a Free Quote",
+    "portfolio_button": "View Portfolio"
+  },
+  "services": {
+    "section_title": "Our Services",
+    "section_desc": "Advanced techniques to repair dents, creases, and weather damage without compromising the original paint.",
+    "card_hail_title": "Hail Damage Repair",
+    "card_hail_desc": "Specialized team to repair hundreds of vehicles damaged by hail storms, restoring them to original factory condition.",
+    "card_pdr_title": "Paintless Dent Repair (PDR)",
+    "card_pdr_desc": "We remove dents from doors, fenders, and hoods caused by minor impacts, preserving the original paint and vehicle value.",
+    "card_express_title": "Express Service",
+    "card_express_desc": "For minor damages, we offer quick repairs. Ideal for preparing vehicles for sale or returning impeccable leases.",
+    "learn_more": "Learn more"
+  },
+  "about": {
+    "title": "Nomad PDR System",
+    "subtitle": "Excellence in Automotive Repair",
+    "description": "We are specialists in advanced Paintless Dent Repair (PDR) techniques. With vast international experience, Nomad PDR System stands out for quick and efficient intervention, especially in hail damage cases.",
+    "check_1": "International Experience",
+    "check_2": "Specialized Team",
+    "check_3": "Service across Portugal",
+    "check_4": "Cutting-edge Technology",
+    "button": "Contact Us"
+  },
+  "cta": {
+    "title": "Your Car New Again",
+    "description": "Don't let dents devalue your vehicle. Contact us and discover how we can help.",
+    "button": "Get a Free Quote"
+  },
+  "footer": {
+    "desc": "Specialists in Paintless Dent Repair and hail damage. Quality, speed, and trust.",
+    "links_title": "Useful Links",
+    "contact_title": "Contact",
+    "hours_title": "Hours",
+    "hours_week": "Mon - Fri: 09h - 18h",
+    "hours_sat": "Saturday: By appointment",
+    "hours_sun": "Sunday: Closed",
+    "copyright": "© 2025 Nomad PDR System. All rights reserved.",
+    "privacy": "Privacy Policy"
+  }
+}

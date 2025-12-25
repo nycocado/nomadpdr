@@ -1,0 +1,55 @@
+{
+  "navbar": {
+    "home": "Início",
+    "services": "Serviços",
+    "about": "Sobre",
+    "contact": "Contactos",
+    "quote_button": "Pedir Orçamento"
+  },
+  "hero": {
+    "badge": "Experiência Internacional",
+    "title_start": "Especialistas em",
+    "title_highlight": "Tira-Mossas",
+    "title_end": "sem Pintura",
+    "description": "Referência em PDR (Paintless Dent Repair) e recuperação de danos por granizo. Intervenção rápida e precisa para manter a originalidade do seu veículo em todo Portugal.",
+    "quote_button": "Pedir Orçamento Grátis",
+    "portfolio_button": "Ver Portfólio"
+  },
+  "services": {
+    "section_title": "Os Nossos Serviços",
+    "section_desc": "Técnicas avançadas para reparar mossas, vincos e danos climáticos sem comprometer a pintura original.",
+    "card_hail_title": "Reparação de Granizo",
+    "card_hail_desc": "Equipa especializada para reparar centenas de veículos danificados por tempestades de granizo, devolvendo a condição original de fábrica.",
+    "card_pdr_title": "Tira-Mossas (PDR)",
+    "card_pdr_desc": "Removemos mossas de portas, guarda-lamas e capôs causadas por pequenos impactos, preservando a pintura original e o valor do veículo.",
+    "card_express_title": "Serviço Express",
+    "card_express_desc": "Para danos menores, oferecemos reparos rápidos. Ideal para preparar veículos para venda ou devolver leasings impecáveis.",
+    "learn_more": "Saiba mais"
+  },
+  "about": {
+    "title": "Nomad PDR System",
+    "subtitle": "Excelência em Reparação Automóvel",
+    "description": "Somos especialistas em técnicas avançadas de Tira-Mossas sem Pintura (PDR). Com vasta experiência internacional, a Nomad PDR System destaca-se pela intervenção rápida e eficiente, especialmente em casos de danos causados por granizo.",
+    "check_1": "Experiência Internacional",
+    "check_2": "Equipa Especializada",
+    "check_3": "Atendimento em Todo Portugal",
+    "check_4": "Tecnologia de Ponta",
+    "button": "Fale Connosco"
+  },
+  "cta": {
+    "title": "O Seu Carro Novo de Novo",
+    "description": "Não deixe que mossas desvalorizem o seu veículo. Entre em contacto e descubra como podemos ajudar.",
+    "button": "Pedir Orçamento Grátis"
+  },
+  "footer": {
+    "desc": "Especialistas em Tira-Mossas e reparação de granizo. Qualidade, rapidez e confiança.",
+    "links_title": "Links Úteis",
+    "contact_title": "Contactos",
+    "hours_title": "Horário",
+    "hours_week": "Seg - Sex: 09h - 18h",
+    "hours_sat": "Sábado: Sob marcação",
+    "hours_sun": "Domingo: Fechado",
+    "copyright": "© 2025 Nomad PDR System. Todos os direitos reservados.",
+    "privacy": "Política de Privacidade"
+  }
+}
