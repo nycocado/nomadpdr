@@ -23,6 +23,9 @@
 
 @layer base {
   :root {
+    /* Navbar Height Variable for dynamic spacing */
+    --navbar-height: 4rem; /* 64px (h-16) */
+
     /* Nomad PDR Design System (Light Mode) */
     --background: #FFFFFF;         /* Clean White */
     --foreground: #111111;         /* Carbon Black */
@@ -107,7 +110,7 @@
     --destructive: #ef4444;        /* Slightly brighter Red for dark mode */
     --destructive-foreground: #FFFFFF;
 
-    --border: #1e293b;
+    --border: #334155;
     --input: #1e293b;
     --ring: #C5A059;               /* Gold ring in dark mode */
 

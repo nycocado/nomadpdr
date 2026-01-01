@@ -6,6 +6,10 @@
     "contact": "Contactos",
     "quote_button": "Pedir Orçamento"
   },
+  "metadata": {
+    "description": "Especialistas em Martelinho de Ouro (PDR) e recuperação de danos por granizo. Intervenção rápida e precisa para manter a originalidade do seu veículo.",
+    "keywords": ["PDR", "Martelinho de Ouro", "Granizo", "Reparação Automóvel", "Sem Pintura", "Portugal"]
+  },
   "hero": {
     "title_start": "Especialistas em",
     "title_highlight": "Tira-Mossas",
@@ -55,7 +59,41 @@
     "label_message": "Mensagem",
     "placeholder_message": "Descreva o dano ou o serviço que procura...",
     "submit_button": "Enviar Mensagem",
-    "success_message": "Mensagem enviada com sucesso! Entraremos em contacto brevemente."
+    "success_title": "Mensagem Enviada!",
+    "success_desc": "Obrigado pelo contacto. Responderemos em breve.",
+    "button_reset": "Enviar nova mensagem",
+    "errors": {
+      "required": "Por favor, preencha todos os campos obrigatórios.",
+      "name_long": "O nome é muito longo (máx. 100 caracteres).",
+      "email_long": "O email é muito longo (máx. 100 caracteres).",
+      "phone_long": "O telefone é muito longo (máx. 20 caracteres).",
+      "message_long": "A mensagem é muito longa (máx. 2000 caracteres).",
+      "email_invalid": "Por favor, insira um endereço de email válido.",
+      "server_error": "Falha ao enviar email. Tente novamente.",
+      "config_error": "Erro de configuração no servidor."
+    }
+  },
+  "privacy_page": {
+    "title": "Política de Privacidade",
+    "last_updated": "Última atualização: 01 de Janeiro de 2026",
+    "intro": "A Nomad PDR System compromete-se a proteger a sua privacidade e a cumprir o Regulamento Geral sobre a Proteção de Dados (RGPD).",
+    "section_1_title": "1. Responsável pelo Tratamento",
+    "section_1_text": "A entidade responsável pelo tratamento dos seus dados é: [INSERIR RAZÃO SOCIAL OU NOME DO EMPRESÁRIO], com NIF [INSERIR NIF], sediada em [INSERIR MORADA COMPLETA]. Contacto para proteção de dados: [INSERIR EMAIL].",
+    "section_2_title": "2. Dados e Finalidade",
+    "section_2_text": "Recolhemos Nome, Email, Telefone e dados do veículo para a finalidade de 'Gestão de Clientes e Prestação de Serviços'. A base licita é a execução de contrato ou diligências pré-contratuais (pedido de orçamento) a pedido do titular dos dados.",
+    "section_3_title": "3. Prazo de Conservação",
+    "section_3_text": "Os dados pessoais serão conservados apenas pelo período necessário para a finalidade definida. Dados de faturação serão conservados por 10 anos (obrigação legal da Autoridade Tributária). Pedidos de orçamento não adjudicados serão eliminados após 1 ano.",
+    "section_4_title": "4. Partilha de Dados",
+    "section_4_text": "Os seus dados podem ser tratados por subcontratantes tecnológicos (Vercel para alojamento, Resend para emails), que atuam sob nossas instruções e com garantias de segurança. Não vendemos dados a terceiros.",
+    "section_5_title": "5. Seus Direitos",
+    "section_5_text": "Tem o direito de solicitar o acesso, retificação, portabilidade e apagamento dos seus dados. Para exercer estes direitos, envie um email para nós. Responderemos no prazo máximo de 30 dias.",
+    "section_6_title": "6. Reclamação à Autoridade",
+    "section_6_text": "Caso considere que o tratamento dos seus dados viola o RGPD, tem o direito de apresentar reclamação à autoridade de controlo nacional: CNPD – Comissão Nacional de Proteção de Dados (www.cnpd.pt).",
+    "back_home": "Voltar ao Início"
+  },
+  "legal": {
+    "ral_text": "Em caso de litígio, o consumidor pode recorrer a uma Entidade de Resolução Alternativa de Litígios de Consumo: Centro de Arbitragem do Setor Automóvel (www.arbitragemauto.pt) ou CNIACC (www.cniacc.pt). Mais informações em Portal do Consumidor (www.consumidor.pt).",
+    "complaints_book": "Livro de Reclamações Eletrónico"
   },
   "cta": {
     "title": "O Seu Carro Novo de Novo",

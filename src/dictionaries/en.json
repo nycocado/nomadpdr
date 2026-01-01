@@ -6,6 +6,10 @@
     "contact": "Contact",
     "quote_button": "Get a Quote"
   },
+  "metadata": {
+    "description": "Specialists in Paintless Dent Repair (PDR) and hail damage recovery. Fast and precise intervention to maintain your vehicle's originality.",
+    "keywords": ["PDR", "Paintless Dent Repair", "Hail Damage", "Car Repair", "Dent Removal", "Portugal"]
+  },
   "hero": {
     "title_start": "Specialists in",
     "title_highlight": "Paintless Dent Repair",
@@ -55,7 +59,41 @@
     "label_message": "Message",
     "placeholder_message": "Describe the damage or service you are looking for...",
     "submit_button": "Send Message",
-    "success_message": "Message sent successfully! We will contact you shortly."
+    "success_title": "Message Sent!",
+    "success_desc": "Thank you for contacting us. We will reply shortly.",
+    "button_reset": "Send new message",
+    "errors": {
+      "required": "Please fill in all required fields.",
+      "name_long": "Name is too long (max 100 chars).",
+      "email_long": "Email is too long (max 100 chars).",
+      "phone_long": "Phone is too long (max 20 chars).",
+      "message_long": "Message is too long (max 2000 chars).",
+      "email_invalid": "Please enter a valid email address.",
+      "server_error": "Failed to send email. Please try again.",
+      "config_error": "Server configuration error."
+    }
+  },
+  "privacy_page": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated: January 1, 2026",
+    "intro": "Nomad PDR System ('we') is committed to protecting your privacy. This policy describes how we collect, use, and protect your personal data.",
+    "section_1_title": "1. Data Controller",
+    "section_1_text": "Nomad PDR System is responsible for the data collected on this website. For privacy-related questions, please contact us via the provided email.",
+    "section_2_title": "2. Data Collected",
+    "section_2_text": "We collect the following data when you fill out our quote form: Name, Email, Phone, and vehicle details. We may also collect technical navigation data (like IP address) for security purposes.",
+    "section_3_title": "3. Purpose of Processing",
+    "section_3_text": "Data is used exclusively to: (a) Respond to your quote request; (b) Schedule services; (c) Comply with legal obligations. We do not use your data for marketing without explicit consent.",
+    "section_4_title": "4. Data Sharing",
+    "section_4_text": "We do not sell your data. We share info only with essential service providers for site operation (e.g., Vercel hosting and Resend email service), under confidentiality agreements.",
+    "section_5_title": "5. Your Rights",
+    "section_5_text": "You have the right to: Access your data; Request rectification or deletion; Restrict processing; and Data portability. To exercise these rights, please email us.",
+    "section_6_title": "6. Cookies and Security",
+    "section_6_text": "We use essential cookies for website functionality. We implement security measures (such as SSL encryption) to protect your data during transmission.",
+    "back_home": "Back to Home"
+  },
+  "legal": {
+    "ral_text": "In case of dispute, the consumer may contact an Alternative Dispute Resolution Entity.",
+    "complaints_book": "Electronic Complaints Book"
   },
   "cta": {
     "title": "Your Car New Again",

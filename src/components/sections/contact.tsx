@@ -7,7 +7,7 @@ import { Loader2 } from "lucide-react"
 
 const initialState = {
   success: false,
-  message: '',
+  code: '',
 }
 
 export function ContactSection({ dict }: { dict: any }) {
@@ -29,21 +29,21 @@ export function ContactSection({ dict }: { dict: any }) {
                     <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                     </div>
-                    <h3 className="text-2xl font-bold text-foreground">{dict.success_message || "Mensagem Enviada!"}</h3>
-                    <p className="text-muted-foreground">Obrigado pelo contacto. Responderemos em breve.</p>
+                    <h3 className="text-2xl font-bold text-foreground">{dict.success_title}</h3>
+                    <p className="text-muted-foreground">{dict.success_desc}</p>
                     <Button 
                         variant="outline" 
                         onClick={() => window.location.reload()}
                         className="mt-6"
                     >
-                        Enviar nova mensagem
+                        {dict.button_reset}
                     </Button>
                 </div>
             ) : (
                 <form action={formAction} className="space-y-6">
-                    {state.message && !state.success && (
+                    {state.code && !state.success && (
                         <div className="p-4 rounded-md bg-destructive/10 text-destructive text-sm font-medium text-center">
-                            {state.message}
+                            {dict.errors?.[state.code] || dict.errors?.server_error || "Error"}
                         </div>
                     )}
 
