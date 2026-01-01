@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Exo_2, Roboto } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import React from 'react';
 
 const exo2 = Exo_2({
   variable: "--font-exo2",

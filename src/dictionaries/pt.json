@@ -7,7 +7,6 @@
     "quote_button": "Pedir Orçamento"
   },
   "hero": {
-    "badge": "Experiência Internacional",
     "title_start": "Especialistas em",
     "title_highlight": "Tira-Mossas",
     "title_end": "sem Pintura",
@@ -17,24 +16,46 @@
   },
   "services": {
     "section_title": "Os Nossos Serviços",
-    "section_desc": "Técnicas avançadas para reparar mossas, vincos e danos climáticos sem comprometer a pintura original.",
-    "card_hail_title": "Reparação de Granizo",
-    "card_hail_desc": "Equipa especializada para reparar centenas de veículos danificados por tempestades de granizo, devolvendo a condição original de fábrica.",
-    "card_pdr_title": "Tira-Mossas (PDR)",
-    "card_pdr_desc": "Removemos mossas de portas, guarda-lamas e capôs causadas por pequenos impactos, preservando a pintura original e o valor do veículo.",
-    "card_express_title": "Serviço Express",
-    "card_express_desc": "Para danos menores, oferecemos reparos rápidos. Ideal para preparar veículos para venda ou devolver leasings impecáveis.",
-    "learn_more": "Saiba mais"
+    "section_desc": "Soluções profissionais para todos os tipos de reparação de mossas",
+    "card_hail_title": "Reparação de Granizo (Hail Damage PDR)",
+    "card_hail_desc": "Especialização internacional, resposta rápida após tempestades de granizo. Equipas móveis prontas para intervir.",
+    "card_pdr_title": "Tira-Mossas sem Pintura",
+    "card_pdr_desc": "Ideal para mossas de estacionamento, portas e pequenos impactos. Reparação profissional sem danificar a pintura original.",
+    "card_support_title": "Suporte a Oficinas e Seguradoras",
+    "card_support_desc": "Prestação de serviços temporários ou permanentes. Parcerias profissionais com garantia de qualidade.",
+    "card_mobile_title": "Equipas Móveis (Trabalhamos em todo o mundo)",
+    "card_mobile_desc": "Deslocação para qualquer cidade ou país. Experiência em projetos internacionais de grande escala."
+  },
+  "process": {
+    "title": "Como Funciona o Processo",
+    "subtitle": "Do primeiro contacto à entrega final - simples e profissional",
+    "step_1_title": "Análise e Orçamento",
+    "step_1_desc": "Avaliação detalhada online ou presencial. Orçamento transparente e sem compromisso.",
+    "step_2_title": "Remoção Técnica",
+    "step_2_desc": "Aplicação de técnicas PDR avançadas. Remoção profissional sem danificar a pintura.",
+    "step_3_title": "Controlo de Qualidade",
+    "step_3_desc": "Inspeção rigorosa do trabalho realizado. Garantia de resultado perfeito.",
+    "step_4_title": "Entrega com Garantia",
+    "step_4_desc": "Veículo sem danos visíveis. Garantia de qualidade e satisfação total."
   },
   "about": {
-    "title": "Nomad PDR System",
-    "subtitle": "Excelência em Reparação Automóvel",
-    "description": "Somos especialistas em técnicas avançadas de Tira-Mossas sem Pintura (PDR). Com vasta experiência internacional, a Nomad PDR System destaca-se pela intervenção rápida e eficiente, especialmente em casos de danos causados por granizo.",
-    "check_1": "Experiência Internacional",
-    "check_2": "Equipa Especializada",
-    "check_3": "Atendimento em Todo Portugal",
-    "check_4": "Tecnologia de Ponta",
+    "title": "Resultados Comprovados",
+    "subtitle": "Antes e Depois",
+    "description": "Veja a qualidade do nosso trabalho. Recuperamos a forma original do seu veículo sem necessidade de pintura ou enchimento.",
+    "before_label": "Antes",
+    "after_label": "Depois",
     "button": "Fale Connosco"
+  },
+  "contact_form": {
+    "section_title": "Solicite um Orçamento Grátis",
+    "section_desc": "Envie-nos os detalhes do dano e receba uma estimativa sem compromisso.",
+    "label_name": "Nome",
+    "label_email": "Email",
+    "label_phone": "Telefone",
+    "label_message": "Mensagem",
+    "placeholder_message": "Descreva o dano ou o serviço que procura...",
+    "submit_button": "Enviar Mensagem",
+    "success_message": "Mensagem enviada com sucesso! Entraremos em contacto brevemente."
   },
   "cta": {
     "title": "O Seu Carro Novo de Novo",
