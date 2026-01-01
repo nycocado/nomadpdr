@@ -1,18 +1,21 @@
 "use client"
 
 import Image from "next/image"
+import Link from "next/link"
 import { Phone, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 import { ModeToggle } from "@/components/mode-toggle"
 
-export function Navbar({ dict }: { dict: any }) {
+export function Navbar({ dict, lang }: { dict: any, lang?: string }) {
+  const homeLink = lang ? `/${lang}` : '/';
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-white/10 bg-background/20 backdrop-blur-sm supports-[backdrop-filter]:bg-background/20 transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-white/10 bg-background/20 backdrop-blur-md supports-[backdrop-filter]:bg-background/20 transition-all duration-300">
       <div className="container mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <Link href={homeLink} className="flex items-center gap-2 hover:opacity-90 transition-opacity">
            <Image 
              src="/logo-icon.svg" 
              alt="Nomad PDR" 
@@ -30,14 +33,14 @@ export function Navbar({ dict }: { dict: any }) {
            <span className="text-xl font-heading font-extrabold italic tracking-tighter text-foreground">
             NOMAD <span className="text-destructive">PDR</span>
           </span>
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-          <a href="#hero" className="hover:text-primary transition-colors">{dict.home}</a>
-          <a href="#services" className="hover:text-primary transition-colors">{dict.services}</a>
-          <a href="#about" className="hover:text-primary transition-colors">{dict.about}</a>
-          <a href="#contact" className="hover:text-primary transition-colors">{dict.contact}</a>
+          <Link href={`${homeLink}#hero`} className="hover:text-primary transition-colors">{dict.home}</Link>
+          <Link href={`${homeLink}#services`} className="hover:text-primary transition-colors">{dict.services}</Link>
+          <Link href={`${homeLink}#about`} className="hover:text-primary transition-colors">{dict.about}</Link>
+          <Link href={`${homeLink}#contact`} className="hover:text-primary transition-colors">{dict.contact}</Link>
         </nav>
 
         {/* CTA & Mobile Menu */}
@@ -55,10 +58,10 @@ export function Navbar({ dict }: { dict: any }) {
             <SheetContent>
               <SheetTitle className="sr-only">{dict.home}</SheetTitle>
               <nav className="flex flex-col gap-4 mt-8">
-                <a href="#hero" className="text-lg font-medium hover:text-primary">{dict.home}</a>
-                <a href="#services" className="text-lg font-medium hover:text-primary">{dict.services}</a>
-                <a href="#about" className="text-lg font-medium hover:text-primary">{dict.about}</a>
-                <a href="#contact" className="text-lg font-medium hover:text-primary">{dict.contact}</a>
+                <Link href={`${homeLink}#hero`} className="text-lg font-medium hover:text-primary">{dict.home}</Link>
+                <Link href={`${homeLink}#services`} className="text-lg font-medium hover:text-primary">{dict.services}</Link>
+                <Link href={`${homeLink}#about`} className="text-lg font-medium hover:text-primary">{dict.about}</Link>
+                <Link href={`${homeLink}#contact`} className="text-lg font-medium hover:text-primary">{dict.contact}</Link>
               </nav>
               <div className="mt-8 border-t pt-4 flex justify-start">
                 <ModeToggle />

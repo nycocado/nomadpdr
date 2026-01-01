@@ -6,6 +6,10 @@
     "contact": "Contato",
     "quote_button": "Pedir Orçamento"
   },
+  "metadata": {
+    "description": "Especialistas em Martelinho de Ouro (PDR) e recuperação de danos por granizo. Intervenção rápida e precisa para manter a originalidade do seu veículo.",
+    "keywords": ["PDR", "Martelinho de Ouro", "Granizo", "Reparação Automotiva", "Sem Pintura", "Brasil"]
+  },
   "hero": {
     "title_start": "Especialistas em",
     "title_highlight": "Martelinho de Ouro",
@@ -55,7 +59,41 @@
     "label_message": "Mensagem",
     "placeholder_message": "Descreva o dano ou o serviço que procura...",
     "submit_button": "Enviar Mensagem",
-    "success_message": "Mensagem enviada com sucesso! Entraremos em contato brevemente."
+    "success_title": "Mensagem Enviada!",
+    "success_desc": "Obrigado pelo contato. Responderemos em breve.",
+    "button_reset": "Enviar nova mensagem",
+    "errors": {
+      "required": "Por favor, preencha todos os campos obrigatórios.",
+      "name_long": "O nome é muito longo (máx. 100 caracteres).",
+      "email_long": "O email é muito longo (máx. 100 caracteres).",
+      "phone_long": "O telefone é muito longo (máx. 20 caracteres).",
+      "message_long": "A mensagem é muito longa (máx. 2000 caracteres).",
+      "email_invalid": "Por favor, insira um endereço de email válido.",
+      "server_error": "Falha ao enviar email. Tente novamente.",
+      "config_error": "Erro de configuração no servidor."
+    }
+  },
+  "privacy_page": {
+    "title": "Política de Privacidade",
+    "last_updated": "Última atualização: 01 de Janeiro de 2026",
+    "intro": "A Nomad PDR System ('nós') compromete-se a proteger a sua privacidade. Esta política descreve como coletamos, usamos e protegemos seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD).",
+    "section_1_title": "1. Controlador dos Dados",
+    "section_1_text": "A Nomad PDR System é a controladora dos dados coletados neste site. Para questões relacionadas à privacidade, entre em contato através do email fornecido.",
+    "section_2_title": "2. Dados Coletados",
+    "section_2_text": "Coletamos os seguintes dados quando você preenche nosso formulário de orçamento: Nome, Email, Telefone e detalhes sobre o veículo. Também podemos coletar dados técnicos de navegação (como endereço IP) para segurança.",
+    "section_3_title": "3. Finalidade do Tratamento",
+    "section_3_text": "Os dados são utilizados exclusivamente para: (a) Responder ao seu pedido de orçamento; (b) Agendar serviços; (c) Obrigações legais. Não utilizamos seus dados para marketing sem seu consentimento explícito.",
+    "section_4_title": "4. Compartilhamento de Dados",
+    "section_4_text": "Não vendemos seus dados. Compartilhamos informações apenas com provedores de serviços essenciais para a operação do site (ex: hospedagem Vercel e envio de emails via Resend), sob sigilo.",
+    "section_5_title": "5. Seus Direitos",
+    "section_5_text": "Você tem direito a: Confirmar a existência de tratamento; Acessar os dados; Corrigir dados incompletos; Solicitar anonimização, bloqueio ou eliminação; e Portabilidade. Para exercer, envie-nos um email.",
+    "section_6_title": "6. Cookies e Segurança",
+    "section_6_text": "Utilizamos cookies essenciais para o funcionamento do site. Implementamos medidas de segurança (como criptografia SSL) para proteger seus dados.",
+    "back_home": "Voltar ao Início"
+  },
+  "legal": {
+    "ral_text": "Consulte o código de defesa do consumidor para seus direitos.",
+    "complaints_book": "Livro de Reclamações"
   },
   "cta": {
     "title": "Seu Carro Novo de Novo",

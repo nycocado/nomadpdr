@@ -14,7 +14,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
   return (
     <div className="flex flex-col min-h-screen bg-background font-sans selection:bg-destructive/20">
-      <Navbar dict={dict.navbar} />
+      <Navbar dict={dict.navbar} lang={lang} />
       <main className="flex-1">
         <HeroSection dict={dict.hero} />
         <ServicesSection dict={dict.services} />
@@ -22,7 +22,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         <AboutSection dict={dict.about} />
         <ContactSection dict={dict.contact_form} />
       </main>
-      <Footer dict={dict.footer} navDict={dict.navbar} />
+      <Footer dict={dict.footer} navDict={dict.navbar} legalDict={dict.legal} lang={lang} />
       <WhatsAppFAB />
     </div>
   )

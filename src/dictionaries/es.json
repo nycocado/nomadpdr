@@ -6,6 +6,10 @@
     "contact": "Contacto",
     "quote_button": "Pedir Presupuesto"
   },
+  "metadata": {
+    "description": "Especialistas en Varilleros sin Pintura (PDR) y recuperación de daños por granizo. Intervención rápida y precisa para mantener la originalidad de su vehículo.",
+    "keywords": ["PDR", "Varilleros", "Granizo", "Reparación Automotriz", "Sin Pintura", "Portugal"]
+  },
   "hero": {
     "title_start": "Especialistas en",
     "title_highlight": "Varilleros (PDR)",
@@ -55,7 +59,41 @@
     "label_message": "Mensaje",
     "placeholder_message": "Describa el daño o servicio que busca...",
     "submit_button": "Enviar Mensaje",
-    "success_message": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto."
+    "success_title": "¡Mensaje Enviado!",
+    "success_desc": "Gracias por contactarnos. Responderemos pronto.",
+    "button_reset": "Enviar nuevo mensaje",
+    "errors": {
+      "required": "Por favor complete todos los campos obligatorios.",
+      "name_long": "El nombre es demasiado largo (máx. 100 caracteres).",
+      "email_long": "El correo es demasiado largo (máx. 100 caracteres).",
+      "phone_long": "El teléfono es demasiado largo (máx. 20 caracteres).",
+      "message_long": "El mensaje es demasiado largo (máx. 2000 caracteres).",
+      "email_invalid": "Por favor ingrese un correo válido.",
+      "server_error": "Error al enviar correo. Intente nuevamente.",
+      "config_error": "Error de configuración del servidor."
+    }
+  },
+  "privacy_page": {
+    "title": "Política de Privacidad",
+    "last_updated": "Última actualización: 1 de Enero de 2026",
+    "intro": "Nomad PDR System ('nosotros') se compromete a proteger su privacidad. Esta política describe cómo recopilamos, usamos y protegemos sus datos personales.",
+    "section_1_title": "1. Responsable del Tratamiento",
+    "section_1_text": "Nomad PDR System es responsable de los datos recopilados en este sitio web. Para preguntas de privacidad, contáctenos vía email.",
+    "section_2_title": "2. Datos Recopilados",
+    "section_2_text": "Recopilamos los siguientes datos al llenar nuestro formulario: Nombre, Email, Teléfono y detalles del vehículo. También podemos recopilar datos técnicos (como IP) por seguridad.",
+    "section_3_title": "3. Finalidad del Tratamiento",
+    "section_3_text": "Los datos se usan exclusivamente para: (a) Responder su solicitud; (b) Agendar servicios; (c) Obligaciones legales. No usamos sus datos para marketing sin consentimiento.",
+    "section_4_title": "4. Compartir Datos",
+    "section_4_text": "No vendemos sus datos. Compartimos información solo con proveedores esenciales (ej: Vercel, Resend) bajo acuerdos de confidencialidad.",
+    "section_5_title": "5. Sus Derechos",
+    "section_5_text": "Tiene derecho a: Acceder a sus datos; Solicitar rectificación o eliminación; Limitar el tratamiento; y Portabilidad. Para ejercer estos derechos, envíenos un email.",
+    "section_6_title": "6. Cookies y Seguridad",
+    "section_6_text": "Usamos cookies esenciales para el funcionamiento del sitio. Implementamos medidas de seguridad (como encriptación SSL) para proteger sus datos.",
+    "back_home": "Volver al Inicio"
+  },
+  "legal": {
+    "ral_text": "En caso de litigio, el consumidor puede recurrir a una Entidad de Resolución Alternativa de Litigios.",
+    "complaints_book": "Libro de Reclamaciones"
   },
   "cta": {
     "title": "Su Coche Nuevo de Nuevo",

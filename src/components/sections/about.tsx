@@ -16,9 +16,11 @@ export function AboutSection({ dict }: { dict: any }) {
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   {dict.description}
                 </p>
-                <Button variant="nomad" className="mt-4">
-                  {dict.button}
-                </Button>
+                <a href="#contact" className="mt-4 inline-block">
+                  <Button variant="nomad">
+                    {dict.button}
+                  </Button>
+                </a>
              </div>
 
              {/* Images Comparison */}
@@ -34,6 +36,7 @@ export function AboutSection({ dict }: { dict: any }) {
                                 src="/example-before.webp" 
                                 alt="Before Repair" 
                                 fill 
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
@@ -49,6 +52,7 @@ export function AboutSection({ dict }: { dict: any }) {
                                 src="/example-after.webp" 
                                 alt="After Repair" 
                                 fill 
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
