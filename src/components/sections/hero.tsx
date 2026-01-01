@@ -1,11 +1,11 @@
 import Image from "next/image"
-import { Star, Instagram } from "lucide-react"
+import { FaInstagram } from "react-icons/fa"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { CONTACT_INFO } from "@/lib/config"
 
 export function HeroSection({ dict }: { dict: any }) {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 pb-32 md:pt-32 md:pb-48 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center pt-32 pb-32 md:pt-48 md:pb-48 overflow-hidden">
        {/* Background Image & Overlays */}
        <div className="absolute inset-0 z-0">
           <Image 
@@ -50,9 +50,6 @@ export function HeroSection({ dict }: { dict: any }) {
 
           {/* Text Content (Hidden Title/Badge on Mobile, shown on Desktop) */}
           <div className="flex-1 text-center lg:text-left space-y-6 order-2 lg:order-1">
-            <Badge variant="secondary" className="hidden lg:inline-flex px-4 py-1 text-sm bg-secondary/10 text-secondary border-secondary/20 backdrop-blur-sm hover:bg-secondary hover:text-secondary-foreground transition-all">
-              <Star className="w-3 h-3 mr-2 fill-current" /> {dict.badge}
-            </Badge>
             
             <h1 className="hidden lg:block text-4xl md:text-6xl lg:text-7xl font-heading font-extrabold italic text-foreground leading-tight tracking-tight">
               {dict.title_start} <br/>
@@ -64,13 +61,17 @@ export function HeroSection({ dict }: { dict: any }) {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-              <Button variant="nomad" size="lg" className="w-full sm:w-auto text-base px-8 h-14">
-                {dict.quote_button}
-              </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto h-14 border-primary/20 text-foreground hover:bg-primary/5 bg-transparent">
-                <Instagram className="mr-2 h-5 w-5" />
-                {dict.portfolio_button}
-              </Button>
+              <a href="#contact" className="w-full sm:w-auto">
+                <Button variant="nomad" size="lg" className="w-full text-base px-8 h-14">
+                  {dict.quote_button}
+                </Button>
+              </a>
+              <a href={CONTACT_INFO.instagram.url} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="w-full h-14 border-primary/20 text-foreground hover:bg-primary/5 bg-transparent">
+                  <FaInstagram className="mr-2 h-5 w-5" />
+                  {dict.portfolio_button}
+                </Button>
+              </a>
             </div>
           </div>
        </div>

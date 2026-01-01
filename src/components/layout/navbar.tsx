@@ -54,15 +54,15 @@ export function Navbar({ dict }: { dict: any }) {
             </SheetTrigger>
             <SheetContent>
               <SheetTitle className="sr-only">{dict.home}</SheetTitle>
-              <div className="flex justify-end mb-4">
-                <ModeToggle />
-              </div>
               <nav className="flex flex-col gap-4 mt-8">
                 <a href="#hero" className="text-lg font-medium hover:text-primary">{dict.home}</a>
                 <a href="#services" className="text-lg font-medium hover:text-primary">{dict.services}</a>
                 <a href="#about" className="text-lg font-medium hover:text-primary">{dict.about}</a>
                 <a href="#contact" className="text-lg font-medium hover:text-primary">{dict.contact}</a>
               </nav>
+              <div className="mt-8 border-t pt-4 flex justify-start">
+                <ModeToggle />
+              </div>
             </SheetContent>
           </Sheet>
         </div>

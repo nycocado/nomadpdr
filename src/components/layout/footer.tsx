@@ -1,12 +1,14 @@
 import Image from "next/image"
-import { Phone, MapPin, Instagram } from "lucide-react"
+import { Phone } from "lucide-react"
+import { FaInstagram } from "react-icons/fa"
 import { Separator } from "@/components/ui/separator"
+import { CONTACT_INFO } from "@/lib/config"
 
-export function Footer({ dict }: { dict: any }) {
+export function Footer({ dict, navDict }: { dict: any, navDict: any }) {
   return (
     <footer className="bg-slate-950 text-white pt-16 pb-8 border-t border-white/10">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div className="space-y-4">
              {/* Footer Logo */}
              <Image 
@@ -24,29 +26,27 @@ export function Footer({ dict }: { dict: any }) {
           <div>
             <h4 className="font-bold mb-4 text-secondary">{dict.links_title}</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">{dict.navbar?.home || "Início"}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{dict.navbar?.about || "Sobre"}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{dict.navbar?.services || "Serviços"}</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">{dict.navbar?.contact || "Contato"}</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">{navDict.home}</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">{navDict.about}</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">{navDict.services}</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">{navDict.contact}</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-bold mb-4 text-secondary">{dict.contact_title}</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li className="flex items-center gap-2"><Phone className="w-4 h-4" /> +351 999 999 999</li>
-              <li className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Portugal</li>
-              <li className="flex items-center gap-2"><Instagram className="w-4 h-4" /> @nomadpdrsystem</li>
+              <li className="flex items-center gap-2">
+                <a href={CONTACT_INFO.phone.whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <Phone className="w-4 h-4" /> {CONTACT_INFO.phone.fullNumber}
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <a href={CONTACT_INFO.instagram.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors">
+                  <FaInstagram className="w-4 h-4" /> {CONTACT_INFO.instagram.display}
+                </a>
+              </li>
             </ul>
-          </div>
-
-          <div>
-             <h4 className="font-bold mb-4 text-secondary">{dict.hours_title}</h4>
-             <ul className="space-y-2 text-sm text-gray-400">
-               <li>{dict.hours_week}</li>
-               <li>{dict.hours_sat}</li>
-               <li>{dict.hours_sun}</li>
-             </ul>
           </div>
         </div>
         

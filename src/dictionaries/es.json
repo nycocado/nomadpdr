@@ -7,7 +7,6 @@
     "quote_button": "Pedir Presupuesto"
   },
   "hero": {
-    "badge": "Experiencia Internacional",
     "title_start": "Especialistas en",
     "title_highlight": "Varilleros (PDR)",
     "title_end": "sin Pintura",
@@ -17,24 +16,46 @@
   },
   "services": {
     "section_title": "Nuestros Servicios",
-    "section_desc": "Técnicas avanzadas para reparar abolladuras, pliegues y daños climáticos sin comprometer la pintura original.",
-    "card_hail_title": "Reparación de Granizo",
-    "card_hail_desc": "Equipo especializado para reparar cientos de vehículos dañados por tormentas de granizo, devolviendo la condición original de fábrica.",
-    "card_pdr_title": "Varilleros (PDR)",
-    "card_pdr_desc": "Eliminamos abolladuras de puertas, guardabarros y capós causadas por pequeños impactos, preservando la pintura original y el valor del vehículo.",
-    "card_express_title": "Servicio Express",
-    "card_express_desc": "Para daños menores, ofrecemos reparaciones rápidas. Ideal para preparar vehículos para venta o devolver leasings impecables.",
-    "learn_more": "Saber más"
+    "section_desc": "Soluciones profesionales para todo tipo de reparación de abolladuras",
+    "card_hail_title": "Reparación de Granizo (Hail Damage PDR)",
+    "card_hail_desc": "Especialización internacional, respuesta rápida tras tormentas de granizo. Equipos móviles listos para intervenir.",
+    "card_pdr_title": "Varilleros sin Pintura (PDR)",
+    "card_pdr_desc": "Ideal para abolladuras de estacionamiento, puertas y pequeños impactos. Reparación profesional sin dañar la pintura original.",
+    "card_support_title": "Soporte a Talleres y Aseguradoras",
+    "card_support_desc": "Prestación de servicios temporales o permanentes. Alianzas profesionales con garantía de calidad.",
+    "card_mobile_title": "Equipos Móviles (Trabajamos en todo el mundo)",
+    "card_mobile_desc": "Desplazamiento a cualquier ciudad o país. Experiencia en proyectos internacionales de gran escala."
+  },
+  "process": {
+    "title": "Cómo Funciona el Proceso",
+    "subtitle": "Desde el primer contacto hasta la entrega final - simple y profesional",
+    "step_1_title": "Análisis y Presupuesto",
+    "step_1_desc": "Evaluación detallada online o presencial. Presupuesto transparente y sin compromiso.",
+    "step_2_title": "Eliminación Técnica",
+    "step_2_desc": "Aplicación de técnicas PDR avanzadas. Eliminación profesional sin dañar la pintura.",
+    "step_3_title": "Control de Calidad",
+    "step_3_desc": "Inspección rigurosa del trabajo realizado. Garantía de resultado perfecto.",
+    "step_4_title": "Entrega con Garantía",
+    "step_4_desc": "Vehículo sin daños visibles. Garantía de calidad y satisfacción total."
   },
   "about": {
-    "title": "Nomad PDR System",
-    "subtitle": "Excelencia en Reparación Automotriz",
-    "description": "Somos especialistas en técnicas avanzadas de Varilleros sin Pintura (PDR). Con vasta experiencia internacional, Nomad PDR System se destaca por la intervención rápida y eficiente, especialmente en casos de daños causados por granizo.",
-    "check_1": "Experiencia Internacional",
-    "check_2": "Equipo Especializado",
-    "check_3": "Atención en todo Portugal",
-    "check_4": "Tecnología de Punta",
+    "title": "Resultados Comprobados",
+    "subtitle": "Antes y Después",
+    "description": "Vea la calidad de nuestro trabajo. Recuperamos la forma original de su vehículo sin necesidad de pintura o masilla.",
+    "before_label": "Antes",
+    "after_label": "Después",
     "button": "Contáctenos"
+  },
+  "contact_form": {
+    "section_title": "Solicite Presupuesto Gratis",
+    "section_desc": "Envíenos los detalles del daño y reciba una estimación sin compromiso.",
+    "label_name": "Nombre",
+    "label_email": "Correo Electrónico",
+    "label_phone": "Teléfono",
+    "label_message": "Mensaje",
+    "placeholder_message": "Describa el daño o servicio que busca...",
+    "submit_button": "Enviar Mensaje",
+    "success_message": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto."
   },
   "cta": {
     "title": "Su Coche Nuevo de Nuevo",

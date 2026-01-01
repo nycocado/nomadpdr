@@ -7,7 +7,6 @@
     "quote_button": "Get a Quote"
   },
   "hero": {
-    "badge": "International Experience",
     "title_start": "Specialists in",
     "title_highlight": "Paintless Dent Repair",
     "title_end": "(PDR)",
@@ -17,24 +16,46 @@
   },
   "services": {
     "section_title": "Our Services",
-    "section_desc": "Advanced techniques to repair dents, creases, and weather damage without compromising the original paint.",
-    "card_hail_title": "Hail Damage Repair",
-    "card_hail_desc": "Specialized team to repair hundreds of vehicles damaged by hail storms, restoring them to original factory condition.",
+    "section_desc": "Professional solutions for all types of dent repair",
+    "card_hail_title": "Hail Damage Repair (PDR)",
+    "card_hail_desc": "International specialization, rapid response after hail storms. Mobile teams ready to intervene.",
     "card_pdr_title": "Paintless Dent Repair (PDR)",
-    "card_pdr_desc": "We remove dents from doors, fenders, and hoods caused by minor impacts, preserving the original paint and vehicle value.",
-    "card_express_title": "Express Service",
-    "card_express_desc": "For minor damages, we offer quick repairs. Ideal for preparing vehicles for sale or returning impeccable leases.",
-    "learn_more": "Learn more"
+    "card_pdr_desc": "Ideal for parking dents, door dings, and minor impacts. Professional repair without damaging original paint.",
+    "card_support_title": "Support for Bodyshops and Insurers",
+    "card_support_desc": "Temporary or permanent service provision. Professional partnerships with quality guarantee.",
+    "card_mobile_title": "Mobile Teams (We work worldwide)",
+    "card_mobile_desc": "Travel to any city or country. Experience in large-scale international projects."
+  },
+  "process": {
+    "title": "How the Process Works",
+    "subtitle": "From first contact to final delivery - simple and professional",
+    "step_1_title": "Analysis and Quote",
+    "step_1_desc": "Detailed online or in-person evaluation. Transparent and no-obligation quote.",
+    "step_2_title": "Technical Removal",
+    "step_2_desc": "Application of advanced PDR techniques. Professional removal without damaging paint.",
+    "step_3_title": "Quality Control",
+    "step_3_desc": "Rigorous inspection of work performed. Perfect result guarantee.",
+    "step_4_title": "Delivery with Warranty",
+    "step_4_desc": "Vehicle without visible damage. Quality guarantee and total satisfaction."
   },
   "about": {
-    "title": "Nomad PDR System",
-    "subtitle": "Excellence in Automotive Repair",
-    "description": "We are specialists in advanced Paintless Dent Repair (PDR) techniques. With vast international experience, Nomad PDR System stands out for quick and efficient intervention, especially in hail damage cases.",
-    "check_1": "International Experience",
-    "check_2": "Specialized Team",
-    "check_3": "Service across Portugal",
-    "check_4": "Cutting-edge Technology",
+    "title": "Proven Results",
+    "subtitle": "Before & After",
+    "description": "See the quality of our work. We restore your vehicle's original shape without the need for painting or fillers.",
+    "before_label": "Before",
+    "after_label": "After",
     "button": "Contact Us"
+  },
+  "contact_form": {
+    "section_title": "Get a Free Quote",
+    "section_desc": "Send us the damage details and get a no-obligation estimate.",
+    "label_name": "Name",
+    "label_email": "Email",
+    "label_phone": "Phone",
+    "label_message": "Message",
+    "placeholder_message": "Describe the damage or service you are looking for...",
+    "submit_button": "Send Message",
+    "success_message": "Message sent successfully! We will contact you shortly."
   },
   "cta": {
     "title": "Your Car New Again",

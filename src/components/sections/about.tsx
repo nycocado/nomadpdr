@@ -1,48 +1,60 @@
-import { CheckCircle2 } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function AboutSection({ dict }: { dict: any }) {
   return (
-    <section id="about" className="py-24 bg-background">
-      <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-16">
-         <div className="w-full md:w-1/2 relative">
-            <div className="aspect-square bg-muted rounded-2xl overflow-hidden relative flex items-center justify-center">
-                {/* Placeholder for About Image - Keeping it generic */}
-               <div className="text-6xl">👨‍🔧</div>
-            </div>
-            {/* Decoration */}
-            <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-[image:var(--gradient-nomad-red)] rounded-2xl -z-10"></div>
-         </div>
-         
-         <div className="w-full md:w-1/2 space-y-6">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground">
-              {dict.title}
-            </h2>
-            <h3 className="text-xl text-secondary font-medium">{dict.subtitle}</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              {dict.description}
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-secondary mt-1" />
-                <p className="text-sm font-medium">{dict.check_1}</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-secondary mt-1" />
-                <p className="text-sm font-medium">{dict.check_2}</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-secondary mt-1" />
-                <p className="text-sm font-medium">{dict.check_3}</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-secondary mt-1" />
-                <p className="text-sm font-medium">{dict.check_4}</p>
-              </div>
-            </div>
-            <Button variant="outline" className="mt-8 border-primary text-primary hover:bg-primary hover:text-white">
-              {dict.button}
-            </Button>
+    <section id="about" className="py-24 bg-muted/50">
+      <div className="container mx-auto px-4 md:px-8">
+         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+             
+             {/* Text Content */}
+             <div className="w-full lg:w-1/3 space-y-6">
+                <h2 className="text-4xl md:text-5xl font-heading font-extrabold italic uppercase tracking-tighter text-transparent bg-clip-text bg-[image:var(--gradient-nomad-red)]">
+                  {dict.title}
+                </h2>
+                <h3 className="text-2xl text-foreground font-bold">{dict.subtitle}</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  {dict.description}
+                </p>
+                <Button variant="nomad" className="mt-4">
+                  {dict.button}
+                </Button>
+             </div>
+
+             {/* Images Comparison */}
+             <div className="w-full lg:w-2/3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                    {/* Before Image */}
+                    <div className="relative group overflow-hidden rounded-2xl shadow-xl border-4 border-white dark:border-slate-800">
+                        <div className="absolute top-4 left-4 z-10 bg-black/70 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider backdrop-blur-md border border-white/20">
+                            {dict.before_label}
+                        </div>
+                        <div className="aspect-[4/5] relative">
+                            <Image 
+                                src="/example-before.webp" 
+                                alt="Before Repair" 
+                                fill 
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                        </div>
+                    </div>
+
+                    {/* After Image */}
+                    <div className="relative group overflow-hidden rounded-2xl shadow-xl border-4 border-white dark:border-slate-800">
+                        <div className="absolute top-4 left-4 z-10 bg-primary/90 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider backdrop-blur-md border border-white/20">
+                            {dict.after_label}
+                        </div>
+                        <div className="aspect-[4/5] relative">
+                            <Image 
+                                src="/example-after.webp" 
+                                alt="After Repair" 
+                                fill 
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                        </div>
+                    </div>
+                </div>
+             </div>
          </div>
       </div>
     </section>
