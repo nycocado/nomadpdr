@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       siteName: 'Nomad PDR System',
       images: [
         {
-          url: '/hero-background.webp', // Ideally create a specific OG image (1200x630)
+          url: '/logo-full.png', // Ideally create a specific OG image (1200x630)
           width: 1200,
           height: 630,
           alt: 'Nomad PDR System',
