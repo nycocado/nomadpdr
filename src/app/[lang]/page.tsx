@@ -22,17 +22,16 @@ export default async function Home({
       <main className="flex-1">
         <HeroSection dict={dict.hero} />
         <ServicesSection dict={dict.services} />
-        <ProcessSection dict={dict.process} />
-        <AboutSection dict={dict.about} />
-        <ContactSection dict={dict.contact_form} />
-      </main>
-      <Footer
+              <ProcessSection dict={dict.process} />
+              <AboutSection dict={dict.about} />
+              <ContactSection dict={dict.contact_form} lang={lang} />
+            </main>      <Footer
         dict={dict.footer}
         navDict={dict.navbar}
         legalDict={dict.legal}
         lang={lang}
       />
-      <WhatsAppFAB />
+      <WhatsAppFAB lang={lang} />
     </div>
   );
 }
