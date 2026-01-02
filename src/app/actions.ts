@@ -1,11 +1,16 @@
-'use server'
+'use server';
 
 import { Resend } from 'resend';
 
 // Initialize Resend with the API key from environment variables
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function sendEmail(prevState: any, formData: FormData) {
+type ActionState = {
+  success: boolean;
+  code: string;
+};
+
+export async function sendEmail(prevState: ActionState, formData: FormData) {
   const name = formData.get('name') as string;
   const email = formData.get('email') as string;
   const phone = formData.get('phone') as string;
@@ -28,15 +33,16 @@ export async function sendEmail(prevState: any, formData: FormData) {
   }
 
   if (!process.env.RESEND_API_KEY) {
-      console.error("RESEND_API_KEY is missing");
-      return { success: false, code: 'config_error' };
+    console.error('RESEND_API_KEY is missing');
+    return { success: false, code: 'config_error' };
   }
 
   try {
-    const fromAddress = process.env.EMAIL_FROM_ADDRESS || 'onboarding@resend.dev';
-    
-    const { data, error } = await resend.emails.send({
-      from: fromAddress, 
+    const fromAddress =
+      process.env.EMAIL_FROM_ADDRESS || 'onboarding@resend.dev';
+
+    const { error } = await resend.emails.send({
+      from: fromAddress,
       to: [process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contato@nomadpdr.com'], // Send to the owner
       replyTo: email, // Reply directly to the client
       subject: `Novo Orçamento: ${name}`,

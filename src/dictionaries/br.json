@@ -78,22 +78,27 @@
     "last_updated": "Última atualização: 01 de Janeiro de 2026",
     "intro": "A Nomad PDR System ('nós') compromete-se a proteger a sua privacidade. Esta política descreve como coletamos, usamos e protegemos seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD).",
     "section_1_title": "1. Controlador dos Dados",
-    "section_1_text": "A Nomad PDR System é a controladora dos dados coletados neste site. Para questões relacionadas à privacidade, entre em contato através do email fornecido.",
+    "section_1_text": "A entidade responsável pelo tratamento dos seus dados é: [COMPANY_NAME], NIF [COMPANY_TAX_ID], sediada em [COMPANY_ADDRESS]. Contato para privacidade: [CONTACT_EMAIL].",
     "section_2_title": "2. Dados Coletados",
-    "section_2_text": "Coletamos os seguintes dados quando você preenche nosso formulário de orçamento: Nome, Email, Telefone e detalhes sobre o veículo. Também podemos coletar dados técnicos de navegação (como endereço IP) para segurança.",
-    "section_3_title": "3. Finalidade do Tratamento",
+    "section_2_text": "Coletamos Nome, Email, Telefone e dados do veículo. Também coletamos dados técnicos e estatísticas anônimas (via Vercel Analytics) para melhoria do serviço.",
+    "section_3_title": "3. Finalidad do Tratamento",
     "section_3_text": "Os dados são utilizados exclusivamente para: (a) Responder ao seu pedido de orçamento; (b) Agendar serviços; (c) Obrigações legais. Não utilizamos seus dados para marketing sem seu consentimento explícito.",
     "section_4_title": "4. Compartilhamento de Dados",
-    "section_4_text": "Não vendemos seus dados. Compartilhamos informações apenas com provedores de serviços essenciais para a operação do site (ex: hospedagem Vercel e envio de emails via Resend), sob sigilo.",
+    "section_4_text": "Não vendemos seus dados. Compartilhamos informações apenas com provedores essenciais (ex: Vercel hosting/analytics, Resend), sob sigilo.",
     "section_5_title": "5. Seus Direitos",
     "section_5_text": "Você tem direito a: Confirmar a existência de tratamento; Acessar os dados; Corrigir dados incompletos; Solicitar anonimização, bloqueio ou eliminação; e Portabilidade. Para exercer, envie-nos um email.",
     "section_6_title": "6. Cookies e Segurança",
-    "section_6_text": "Utilizamos cookies essenciais para o funcionamento do site. Implementamos medidas de segurança (como criptografia SSL) para proteger seus dados.",
+    "section_6_text": "Utilizamos cookies essenciais e tecnologias de desempenho. Implementamos medidas de segurança (como criptografia SSL) para proteger seus dados.",
     "back_home": "Voltar ao Início"
   },
   "legal": {
     "ral_text": "Consulte o código de defesa do consumidor para seus direitos.",
     "complaints_book": "Livro de Reclamações"
+  },
+  "cookies": {
+    "text": "Utilizamos cookies essenciais e de desempenho. Ao continuar, você concorda com nossa",
+    "policy_link": "Política de Privacidade",
+    "accept": "Aceitar"
   },
   "cta": {
     "title": "Seu Carro Novo de Novo",
