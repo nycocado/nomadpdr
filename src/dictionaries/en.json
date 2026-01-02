@@ -78,22 +78,27 @@
     "last_updated": "Last updated: January 1, 2026",
     "intro": "Nomad PDR System ('we') is committed to protecting your privacy. This policy describes how we collect, use, and protect your personal data.",
     "section_1_title": "1. Data Controller",
-    "section_1_text": "Nomad PDR System is responsible for the data collected on this website. For privacy-related questions, please contact us via the provided email.",
+    "section_1_text": "The entity responsible for processing your data is: [COMPANY_NAME], VAT ID [COMPANY_TAX_ID], located at [COMPANY_ADDRESS]. Privacy contact: [CONTACT_EMAIL].",
     "section_2_title": "2. Data Collected",
-    "section_2_text": "We collect the following data when you fill out our quote form: Name, Email, Phone, and vehicle details. We may also collect technical navigation data (like IP address) for security purposes.",
+    "section_2_text": "We collect Name, Email, Phone, and vehicle details for 'Customer Management'. We also collect technical data and anonymous usage statistics (via Vercel Analytics) to improve service. Legal basis: pre-contractual steps and legitimate interest.",
     "section_3_title": "3. Purpose of Processing",
     "section_3_text": "Data is used exclusively to: (a) Respond to your quote request; (b) Schedule services; (c) Comply with legal obligations. We do not use your data for marketing without explicit consent.",
     "section_4_title": "4. Data Sharing",
-    "section_4_text": "We do not sell your data. We share info only with essential service providers for site operation (e.g., Vercel hosting and Resend email service), under confidentiality agreements.",
+    "section_4_text": "We do not sell your data. We share info only with essential service providers (e.g., Vercel for hosting/analytics and Resend for emails), under confidentiality agreements.",
     "section_5_title": "5. Your Rights",
     "section_5_text": "You have the right to: Access your data; Request rectification or deletion; Restrict processing; and Data portability. To exercise these rights, please email us.",
     "section_6_title": "6. Cookies and Security",
-    "section_6_text": "We use essential cookies for website functionality. We implement security measures (such as SSL encryption) to protect your data during transmission.",
+    "section_6_text": "We use essential cookies and performance technologies for website functionality. We implement security measures (such as SSL encryption) to protect your data.",
     "back_home": "Back to Home"
   },
   "legal": {
     "ral_text": "In case of dispute, the consumer may contact an Alternative Dispute Resolution Entity.",
     "complaints_book": "Electronic Complaints Book"
+  },
+  "cookies": {
+    "text": "We use essential cookies and performance technologies to ensure proper functionality. By continuing, you agree to our",
+    "policy_link": "Privacy Policy",
+    "accept": "Accept"
   },
   "cta": {
     "title": "Your Car New Again",
