@@ -89,7 +89,7 @@ export function Footer({
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <a
-                  href={CONTACT_INFO.phone.whatsappLink}
+                  href={CONTACT_INFO.phone.getWhatsappLink(lang)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-primary transition-colors"

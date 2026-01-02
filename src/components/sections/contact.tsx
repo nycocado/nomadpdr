@@ -11,7 +11,7 @@ const initialState = {
   code: '',
 };
 
-export function ContactSection({ dict }: { dict: Dictionary['contact_form'] }) {
+export function ContactSection({ dict, lang = 'pt' }: { dict: Dictionary['contact_form'], lang?: string }) {
   const [state, formAction, isPending] = useActionState(
     sendEmail,
     initialState,
@@ -59,6 +59,7 @@ export function ContactSection({ dict }: { dict: Dictionary['contact_form'] }) {
             </div>
           ) : (
             <form action={formAction} className="space-y-6">
+                    <input type="hidden" name="lang" value={lang} />
             {state.code && !state.success && (
               <div className="p-4 rounded-md bg-destructive/10 text-destructive text-sm font-medium text-center">
                 {dict.errors?.[state.code as keyof typeof dict.errors] ||

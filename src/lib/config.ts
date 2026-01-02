@@ -11,9 +11,16 @@ export const CONTACT_INFO = {
       }
       return `+${this.ddi} ${this.ddd ? this.ddd + ' ' : ''}${this.number}`;
     },
-    get whatsappLink() {
-      return `https://wa.me/${this.ddi}${this.ddd}${this.number}`;
-    },
+    getWhatsappLink(lang: string = 'pt') {
+      const messages = {
+        pt: "Olá, gostaria de pedir um orçamento.",
+        br: "Olá, gostaria de pedir um orçamento.",
+        es: "Hola, quisiera solicitar un presupuesto.",
+        en: "Hello, I would like to request a quote.",
+      };
+      const msg = messages[lang as keyof typeof messages] || messages.pt;
+      return `https://wa.me/${this.ddi}${this.ddd}${this.number}?text=${encodeURIComponent(msg)}`;
+    }
   },
   instagram: {
     handle: process.env.NEXT_PUBLIC_INSTAGRAM_HANDLE || 'your_instagram_handle',
