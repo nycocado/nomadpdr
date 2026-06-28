@@ -18,29 +18,6 @@
 
 Institutional landing page for **Nomad PDR System** — specialists in Paintless Dent Repair (PDR) and hail damage recovery. Built with Next.js 16 App Router, bilingual (EN/PT), with an integrated contact form and email notifications via Resend.
 
-## Features
-
-| Feature | Description |
-| ------- | ----------- |
-| **Bilingual (EN/PT)** | Full i18n support via JSON dictionaries and locale routing. |
-| **Contact form** | Server Action with validation and dual email delivery (admin + customer confirmation) via Resend. |
-| **Privacy Policy** | GDPR-aware privacy page with cookie consent banner. |
-| **SEO & Open Graph** | Per-locale metadata, Open Graph tags and structured sitemap. |
-| **Vercel Analytics** | Anonymous usage statistics integrated at the layout level. |
-| **Responsive design** | Mobile-first layout built with Tailwind CSS v4 and Radix UI primitives. |
-
-## Stack
-
-| Technology | Version | Role |
-| ---------- | ------- | ---- |
-| Next.js | 16 | Framework (App Router, React Server Components) |
-| React | 19 | UI runtime |
-| TypeScript | 5 | Type safety |
-| Tailwind CSS | v4 | Styling |
-| Radix UI | latest | Accessible UI primitives |
-| Resend | 6 | Transactional email |
-| Vercel Analytics | 1 | Anonymous analytics |
-
 ## Requirements
 
 | Tool | Version |

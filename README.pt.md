@@ -18,29 +18,6 @@ Português | [English](README.md)
 
 Landing page institucional do **Nomad PDR System** — especialistas em Paintless Dent Repair (PDR) e recuperação de danos por granizo. Construída com Next.js 16 App Router, bilíngue (EN/PT), com formulário de contacto integrado e notificações por email via Resend.
 
-## Funcionalidades
-
-| Funcionalidade | Descrição |
-| -------------- | --------- |
-| **Bilíngue (EN/PT)** | Suporte completo a i18n via dicionários JSON e roteamento por locale. |
-| **Formulário de contacto** | Server Action com validação e envio duplo de email (admin + confirmação ao cliente) via Resend. |
-| **Política de privacidade** | Página de privacidade com banner de consentimento de cookies (GDPR). |
-| **SEO & Open Graph** | Metadados por locale, tags Open Graph e sitemap estruturado. |
-| **Vercel Analytics** | Estatísticas de uso anónimas integradas ao nível do layout. |
-| **Design responsivo** | Layout mobile-first com Tailwind CSS v4 e primitivas Radix UI. |
-
-## Stack
-
-| Tecnologia | Versão | Papel |
-| ---------- | ------ | ----- |
-| Next.js | 16 | Framework (App Router, React Server Components) |
-| React | 19 | Runtime de UI |
-| TypeScript | 5 | Tipagem estática |
-| Tailwind CSS | v4 | Estilização |
-| Radix UI | latest | Primitivas de UI acessíveis |
-| Resend | 6 | Email transacional |
-| Vercel Analytics | 1 | Analytics anónimo |
-
 ## Requisitos
 
 | Ferramenta | Versão |
