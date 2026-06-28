@@ -5,7 +5,6 @@ import { render } from '@react-email/render';
 import AdminEmail from '@/emails/admin-email';
 import CustomerEmail from '@/emails/customer-email';
 
-// Initialize Resend with the API key from environment variables
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 type ActionState = {
@@ -27,7 +26,6 @@ export async function sendEmail(prevState: ActionState, formData: FormData) {
   const message = formData.get('message') as string;
   const lang = (formData.get('lang') as string) || 'pt';
 
-  // Basic validation & Limits
   if (!name || !email || !message) {
     return { success: false, code: 'required' };
   }
@@ -37,7 +35,6 @@ export async function sendEmail(prevState: ActionState, formData: FormData) {
   if (phone && phone.length > 20) return { success: false, code: 'phone_long' };
   if (message.length > 2000) return { success: false, code: 'message_long' };
 
-  // Basic Email Regex
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
     return { success: false, code: 'email_invalid' };
@@ -52,10 +49,8 @@ export async function sendEmail(prevState: ActionState, formData: FormData) {
     const fromAddress =
       process.env.EMAIL_FROM_ADDRESS || 'onboarding@resend.dev';
     
-    // Admin email destination
     const ownerEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contato@nomadpdr.com';
 
-    // 1. Send Admin Email
     const adminHtml = await render(
         <AdminEmail 
           name={name} 
@@ -68,8 +63,8 @@ export async function sendEmail(prevState: ActionState, formData: FormData) {
 
     const { error: adminError } = await resend.emails.send({
       from: fromAddress,
-      to: [ownerEmail], // Send to the owner
-      replyTo: email, // Reply directly to the client
+      to: [ownerEmail],
+      replyTo: email,
       subject: `Novo Orçamento: ${name} [${lang.toUpperCase()}]`,
       html: adminHtml,
     });
@@ -79,7 +74,6 @@ export async function sendEmail(prevState: ActionState, formData: FormData) {
       return { success: false, code: 'server_error' };
     }
 
-    // 2. Send Customer Email (Fire and forget, don't fail if this fails)
     try {
         const customerHtml = await render(<CustomerEmail name={name} lang={lang} />);
         const subject = customerSubjects[lang] || customerSubjects.en;
@@ -92,7 +86,6 @@ export async function sendEmail(prevState: ActionState, formData: FormData) {
         });
     } catch (customerError) {
         console.error('Resend Customer Error (Non-fatal):', customerError);
-        // We don't return error here to ensure the user sees "Success" even if confirmation email fails
     }
 
     return { success: true, code: 'success' };

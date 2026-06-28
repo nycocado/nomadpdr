@@ -60,11 +60,10 @@ const translations = {
 };
 
 export const CustomerEmail = ({ name, lang = 'pt' }: CustomerEmailProps) => {
-  // Fallback to 'en' if lang is not found, or map variations
   const safeLang = (Object.keys(translations).includes(lang) ? lang : 'en') as keyof typeof translations;
   const t = translations[safeLang];
 
-  const logoUrl = `${SITE_URL}/logo-full.png`; // Ensure this is accessible publicly
+  const logoUrl = `${SITE_URL}/logo-full.png`;
 
   return (
     <Html>
