@@ -20,6 +20,8 @@
 
 Institutional landing page for **Nomad PDR System** — specialists in Paintless Dent Repair (PDR) and hail damage recovery. Built with Next.js 16 App Router, bilingual (EN/PT), with an integrated contact form and email notifications via Resend.
 
+Available at **[nomadpdr.pt](https://www.nomadpdr.pt/)**.
+
 ## Requirements
 
 | Tool | Version |
